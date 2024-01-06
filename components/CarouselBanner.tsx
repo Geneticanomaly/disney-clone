@@ -10,6 +10,7 @@ type CarouselBannerProps = {
     movies: Movie[];
 };
 
+// https://www.embla-carousel.com/get-started/react/
 Autoplay.globalOptions = {delay: 8000};
 
 function CarouselBanner({movies}: CarouselBannerProps) {
