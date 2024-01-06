@@ -21,7 +21,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <Header />
+                    {/* <Header /> */}
                     {children}
                 </ThemeProvider>
             </body>
