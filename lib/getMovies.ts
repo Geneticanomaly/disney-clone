@@ -41,7 +41,6 @@ export async function getTopRatedMovies() {
 export async function getPopularMovies() {
     const url = new URL('https://api.themoviedb.org/3/movie/popular');
     const data = await getMovies(url);
-    console.log('POPULAR DATA:', data);
 
     return data.results;
 }

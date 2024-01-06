@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
 import {ThemeToggler} from './ThemeTogglers';
 import SearchInput from './SearchInput';
 import GenreDropDown from './GenreDropDown';
