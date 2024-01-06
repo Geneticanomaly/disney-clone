@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
     return (
         <html lang="en">
-            <body className="bg-white dark:bg-[#1A1C29]">
+            <body className="bg-white dark:bg-[#1A1C29] scrollbar-hide#">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/* <Header /> */}
+                    <Header />
                     {children}
                 </ThemeProvider>
             </body>

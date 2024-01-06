@@ -11,11 +11,11 @@ type MovieCarouselProps = {
 function MoviesCarousel({title, movies, isVertical}: MovieCarouselProps) {
     return (
         <div className="z-50">
-            <h2>{title}</h2>
+            <h2 className="ml-10 font-bold">{title}</h2>
             <div
                 className={cn(
-                    'flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide',
-                    isVertical && 'flex-col space-x-0 space-y-12'
+                    'flex space-x-4 overflow-x-scroll px-5 lg:px-10 py-5 scrollbar-y-hide',
+                    isVertical ? 'flex-col space-x-0 space-y-12' : 'overflow-x-auto'
                 )}
             >
                 {isVertical
